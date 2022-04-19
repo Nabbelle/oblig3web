@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobilletter</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index2.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="indeks.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+<label for="film">Velg en Film:</label>
+<select id="film" name="Film">
+    <option value="velg">Velg</option>
+    <option value="Spiderman no way home">Spiderman no way home</option>
+    <option value="Eternals">Eternals</option>
+    <option value="Scream">Scream</option>
+    <option value="Sing 2">Sing 2</option>
+</select>
+<span id="filmFeil" style="color: orangered"></span>
+<br>
+<br>
+<table>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="Antall">Antall</label>
+                <input type="text" class="form-control" id="antall">
+                <span id="antallFeil" style="color: orangered"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">Fornavn</label>
+                <input type="text" class="form-control" id="fname">
+                <span id="fnameFeil" style="color: orangered" ></span>
+            </div>
+
+            <div class="form-group">
+                <label for="ename">Etternavn</label>
+                <input type="text" class="form-control" id="ename">
+                <span id="enameFeil" style="color: orangered" ></span>
+            </div>
+
+            <div class="form-group">
+                <label for="telefonnr">Telefonnr</label>
+                <input type="text" class="form-control" id="telefonnr">
+                <span id="telefonnrFeil" style="color: orangered" ></span>
+            </div>
+
+            <div class="form-group">
+                <label for="epost">Email</label>
+                <input type="text" class="form-control" id="epost">
+                <span id="epostFeil" style="color: orangered" ></span>
+            </div>
+
+
+        </form>
+        <button type="button"onclick="kjop()" class="btn btn-primary">kjøpbillett</button>
+    </div>
+</table>
+
+<h3>Alle billetter</h3>
+<div id="alleBillettene"></div>
+<button onclick="slettbillett()" class="btn btn-success">Slett alle billetter</button>
+
+</body>
+</html>
