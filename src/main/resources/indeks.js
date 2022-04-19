@@ -77,7 +77,7 @@ function visallebilletter() {
     })
 }
 function hentalle() {
-    let ut = "<table><tr><th>film</th><th>antall</th>";
+    skrivUt = "<table><tr><th>film</th><th>antall</th>";
     ut += "<th>fornavn</th><th>etternavn</th><th>telefonnr</th><th>epost</th></tr>";
     for (let i = 0; i < billettene.length; i++) {
         ut += "<tr><td>" + billettene[i].film + "</td><td>" + billettene[i].antall;
@@ -86,7 +86,9 @@ function hentalle() {
         ut += "</td></tr>";
         $("#allebillettene").html(ut);
     }
+
 }
+
 
 function slettbillett() {
     $.post("/slettbillett", function () {
