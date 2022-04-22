@@ -1,6 +1,7 @@
-package com.example.oblig2;
+package com.example.oblig3web;
+
 public class Billett {
-     String fornavn;
+    String fornavn;
     private String etternavn;
     private String telefonnr;
     private String epost;
